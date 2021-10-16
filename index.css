@@ -1,0 +1,374 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+#top-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px fit-content fit-content 70vh 40vh;
+    grid-template-areas: 
+    "nav nav"
+    ". h1"
+    "service service"
+    "about about"
+    "footer footer";
+    row-gap: 2rem;
+    width: 90vw;
+    margin: 0 auto;
+    font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    
+
+    
+}
+.head-section{
+    grid-area: nav;
+    height: 5rem;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.head-section button{
+    display: none;
+    height: 5rem;
+    width: 2rem;
+}
+
+
+.img{
+    width: 20vw;
+    height: 5rem;
+
+
+}
+.navbar{
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+    height: inherit; 
+    
+    
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #3890dd;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #009879;
+    margin-right: 5px;
+    
+   }
+   .nav-link .material-icons{
+    margin-right: 12px;
+   }
+   
+   .nav-link:hover{
+       background-color: #3890dd;
+       color: #fff;
+   }
+   .nav-link:active{
+    background: #408045;
+}
+
+#home{
+    grid-area: h1;
+    display: flex;
+    height: 80vh;
+    margin-top: 3.1rem;
+    margin-right: 1.5rem;
+    width: 90vw;
+    
+}
+.bg-img{
+    width: 48vw;
+    height: inherit;        
+}
+#home > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-content,.home-div{
+    font-weight: 100;
+    color:   #3890dd;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: inherit;
+    flex-direction: column;
+    width: inherit;
+    
+}
+.home-div > h4{
+    color: black;
+}
+.contact-class{
+    width: 10rem;
+    background-color: red;
+    border-radius: 1rem;
+
+}
+.contact-class:hover{
+    background-color: greenyellow;
+}
+.phone{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin: 0 auto;
+}
+#service{
+    grid-area: service;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;  
+    width: 90vw;
+}
+
+.service{
+    font-weight: 100;
+    color: white;
+    background-color: #3890dd;
+    width: max-content;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.img-div-wrapper{
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.img-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 35vh;
+    position: relative;
+    margin: 1em;
+    background-color: thistle;
+}
+.img-1{
+    width: inherit;
+    height: inherit;
+  
+}
+.span-div{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.span-div:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    
+}
+.span-tag{
+    width: inherit;
+    
+}
+
+
+#about{
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    
+    
+}
+
+.h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: black;
+    
+}
+
+.img-div{
+    display: flex;
+    width: inherit;
+}
+
+.div-in-content{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    height: 30rem;
+    
+    
+}
+.img-in-content{
+    width: 30%;
+    margin: 0 auto;
+    background-color: none;
+}
+
+.paragraph{
+    color: grey;
+    text-align: justify;
+    line-height: 23px;
+    letter-spacing: normal;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: inherit;
+    height: 80%;
+
+
+}
+#contact{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+   
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-img, .pin{
+    width: 4rem;
+    margin: 5rem 0 2rem 0;
+}
+.footer-img:hover{
+    width: 5rem;
+}
+.footer-div{
+    margin: 3rem 0;
+    width: 19rem;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    background-color: lightpink;
+
+}
+.footer-phone, .footer-email, .footer-location{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;    
+}
+
+@media screen and (max-width: 640px) {
+ 
+    .head-section{
+        background-color: lawngreen;
+        height: 8rem;
+    }
+    .head-section button{
+        height: 10rem;
+        display: block;
+        cursor: pointer;
+    }
+    .navbar--open{
+        display: block;
+        width: 20rem;
+        background: slateblue;
+    }
+    
+    .navbar{
+        display: none;
+    }
+
+  .nav-link{
+      display: flex;
+      flex-direction: row;
+      height: 2rem;
+      width: 8rem;
+      margin: 0rem;
+      font-size: 10px;
+      background-color: lightblue;
+      
+      
+    
+      
+      
+  }
+ 
+  
+    #home{
+        margin-top: -20vh;
+        margin-bottom: -20vh;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .bg-img{
+         display: none;
+    }
+    .home-div{
+        width: 40vw;
+        height: 20vh;
+    }
+    .main-content{
+        height: 25vh;
+        
+  }
+  .service{
+      width: 80vw;
+      background-color: tomato;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+  @media screen and (max-width: 1175px) {
+     
+
+  }
+  @media screen and (max-width: 1920px) {
+
+  }
+}
